@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/biblio-image.jpg');
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#signup{
+    border: 2px solid brown;
+    border-radius: 20px 20px;
+    position:absolute;
+    top: 15%;
+    flex-direction: column;
+    background-color:rgba(243, 164, 85, 0.5);
+    width: 400px;
+    max-height: 530px;
+    align-items: center;
+    justify-content: center;
+}
+#psign{
+    margin-top: 0;
+    background-color:rgba(243, 164, 85, 0.5);
+    width: 396px;
+    border-radius: 17px 17px 0 0;
+    padding: 30px;
+    text-align: center;
+    color:black;
+    font-size: 30px;
+}
+input{
+    margin: 14px;
+    width:300px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px rgb(129, 48, 48);
+}
+input[type=password],input[type=email],input[type=text]{
+    background-color:whitesmoke;
+}
+
+#sub{
+    background-color: brown;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 16pt;
+    padding: 9px;
+}
+#sub:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+#sub:active{
+    color: blueviolet;
+}
+a{
+    color:darkblue;
+    font-size: 20px; 
+    font-weight: bold;
+}
+a:hover{
+    color:blue;
+}
+strong{
+    color: white;
+}

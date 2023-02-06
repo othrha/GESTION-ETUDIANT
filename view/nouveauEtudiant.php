@@ -1,0 +1,64 @@
+<?php
+   include_once "../controller/session_start.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/all.css">
+    <link rel="stylesheet" href="public/my_css/indexstyle.css"/>
+    <link rel="stylesheet" href="public/my_css/nouveauEtudiant.css">
+    <title>nouveauEtudiant</title>
+</head>
+<body>
+    <header>
+        <img src="public/images/logo.jpg" alt="logo">
+        <a href="index.php" class="a1" id="acceuil"><i class="fa-solid fa-house-user"></i> Acceuil</a>
+        <div id="logedin">
+            <p id='welcome'>
+            <i class="fa-solid fa-user-group"></i> Bienvenue <?php echo $username ?> 
+            </p>
+        <a href="../controller/session_destroy.php" class="a1" id="deconnexion"><i class="fa-solid fa-right-from-bracket"></i> Déconnexion</a>
+        </div>
+    </header>
+  
+    <nav>
+        <p class="gest">Gestion Etudiant</p>
+        <a href="nouveauEtudiant.php" class="liens"><i class="fa-solid fa-circle-plus"></i> Nouveau Etudiant</a><br>
+        <a href="supprimerEudiant.php" class="liens"><i class="fa-solid fa-trash-can"></i> Suppression Etudiant</a><br>
+        <a href="modifierEud.php" class="liens"><i class="fa-solid fa-pencil"></i> Modification Etudiant</a><br>
+        <a href="rechercheEtud.php" class="liens"><i class="fa-solid fa-magnifying-glass"></i> Rechreche Etudiant</a><br>
+        <a href="listeEtudiants.php" class="liens"><i class="fa-solid fa-list"></i> Liste Etudiant</a><br>
+        <p class="gest">Gestion Livre</p>
+        <a href="nouveauLivre.php" class="liens"><i class="fa-solid fa-circle-plus"></i> Nouveau Livre</a><br>
+        <a href="supprimerLivre.php" class="liens"><i class="fa-solid fa-trash-can"></i> Suppression Livre</a><br>
+        <a href="modifierLivre.php" class="liens"><i class="fa-solid fa-pencil"></i> Modification Livre</a><br>
+        <a href="rechercheLivre.php" class="liens"><i class="fa-solid fa-magnifying-glass"></i> Rechreche Livre</a><br>
+        <a href="listeLivre.php" class="liens"><i class="fa-solid fa-list"></i> Liste Livre</a><br>
+        <p class="gest">Gestion des Emprunts</p>
+        <a href="emprunterLivre.php" class="liens"><i class="fa-solid fa-circle-plus"></i> Emprunts un Livre</a><br>
+        <a href="" class="liens"><i class="fa-solid fa-book"></i> Retour d'un Livre</a><br>
+        <a href="listeEmprunter.php" class="liens"><i class="fa-solid fa-list"></i> Liste des Emprunter</a><br>
+    </nav>
+        <section id="dashbord">
+            <form method="POST" action="">
+                <legend><h2 id="titre">Nouveau Etudiant</h2></legend>
+                Code <input type="number" name="code" id="code" placeholder="Saisir Code.."><br><br>
+                Nom  <input type="text" name="nom" id="nom" placeholder="Saisir nom.."> <br><br>
+                Prenom <input type="text" name="prenom" id="prenom" placeholder="Saisir prénom.."><br><br>
+                Classe <input type="text" name="classe" id="classe" placeholder="Saisir Classe.."><br><br>
+                <label for="" id="label-adresse">Adresse</label> <textarea name="adresse" id="adresse" cols="30" rows="2" placeholder="Voter Adresse ici.."></textarea><br><br>
+                <input type="submit" value="Créer" name="submit">
+            </form>
+            <h1>
+                <?php
+                require_once '../controller/nouveauEtud_action.php' ;
+                ?>
+            </h1>
+        </section>
+</body>
+</html>
+

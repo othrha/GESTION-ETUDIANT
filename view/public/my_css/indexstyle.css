@@ -1,0 +1,122 @@
+body{
+    background-image: url("../images/thumb-1920-1042582.jpg");
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(70, 75, 70);
+    max-width: 100%;
+    max-height: 65px;
+    padding: 17px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+#acceuil{
+    position:absolute;
+    left:120px;
+}
+#deconnexion{
+    position:absolute;
+    left:1100px;
+}
+#welcome{
+    position:absolute;
+    left: 500px;
+    font-size: 18pt;
+    color:white;
+}
+.a1{
+    font-size: 18pt;
+    color:white;
+    text-decoration: none;
+} 
+.a1:hover{
+    color:chartreuse;
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
+}
+
+#welcome:hover{
+    color: white;
+}
+#logedin{
+    display: flex;
+    width: 430px;
+    justify-content: space-between;
+}
+nav{
+    /*background-color:darkgray;*/
+    background-color:rgba(135, 129, 129, 0.5);
+    border: 2px solid black;
+    max-width: 250px;
+    font-size: large;
+    font-size: 20px;
+    margin-left: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    max-height: 442px;
+
+}
+main{
+    display: flex;
+}
+
+.liens{
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+.liens:hover{
+    color:antiquewhite;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+.gest{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 4px;
+    margin-top: 10px;
+}
+input{
+    margin-left: 50px;
+}
+.fa-circle-plus{
+    color:dodgerblue
+}
+.fa-pencil{
+    color: chocolate;
+}
+.fa-magnifying-glass{
+    color:darkgreen;
+}
+.fa-list{
+    color:blue;
+}
+.fa-trash-can{
+    color: red;
+}
+.fa-book{
+    color:darkcyan;
+}
+.fa-house-user{
+    color: blue;
+}
+.fa-right-from-bracket{
+    color:yellow;
+}
+.fa-user-group{
+    color:brown;
+}
+img{
+    width: 70px;
+    height: 60px;
+}

@@ -1,0 +1,123 @@
+/*body{
+    background-image: url('thumb-1920-1042582.jpg');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(70, 75, 70);
+    width: 100%;
+    padding: 17px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.a1, #welcome{
+    font-size: 18pt;
+    color:white;
+    text-decoration: none;
+} 
+a:hover{
+    color: rgb(30, 9, 214);
+    text-decoration:underline;
+}
+#welcome:hover{
+    color: white;
+}
+#logedin{
+    display: flex;
+    width: 430px;
+    justify-content: space-between;
+}
+nav{
+    background-color: rgb(162, 158, 158);
+    border: 2px solid black;
+    width: 190px;
+    height: auto;
+    font-size: large;
+    margin-left: 12px;
+    margin-top: 3px;
+    padding: 10px;
+}
+main{
+    display: flex;
+}
+
+.liens{
+    color: black;
+    text-decoration: none;
+}
+.gest{
+    background-color: rgb(138, 43, 226);
+}*/
+section{
+    margin-left: 200px;
+}
+form{
+    border: 2px solid rgb(53, 5, 98);
+    border-radius : 15px; 
+    padding: 20px 100px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    font-size: 30px;
+    width: 402px;
+    height: 300px;
+}
+input[type=number]{
+    height: 30px;
+    width: 200px;
+    border-color: blue;
+    padding: 3px;
+    margin-left: -70px;
+}
+input[type=submit]{
+    position: absolute;
+    top: 173px;
+    right: 556px;
+    height: 30px;
+    width: 100px;
+    
+}
+input[type=submit]:hover{
+    background-color:red;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+#titre{
+    text-align: center; 
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+ }
+/* ////////////////////////////////////////////////////// */
+ #suggesstion-box li{    
+    list-style:none;
+    box-sizing: border-box; 
+    padding: 10px; 
+    background-color:#FAFAFA; 
+    border-bottom:#F0F0F0 1px solid; 
+    transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    cursor:pointer; 
+    word-wrap:break-word;
+}
+#suggesstion-box li:hover, #code-list li:focus{ background:#F0F0F0; }
+#suggesstion-box li.active { background:#000; color:#fff; }
+#suggesstion-box {
+    position: absolute;  
+    display:block; 
+    top:205px;
+    left: 450px;
+    width:350px; 
+    z-index:9999;
+    float:left; 
+    margin:0; 
+    padding:0; 
+    }
